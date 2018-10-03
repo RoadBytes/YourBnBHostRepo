@@ -1,0 +1,91 @@
+.footer {
+  background: #444;
+  color: white;
+  margin-bottom: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: 10px;
+  padding: 0 15px;
+}
+
+.footer__brand {
+  padding-top: 10px;
+}
+
+.footer__brand__logo {
+  width: 260px;
+  background-image: image-url('images/logo_white.png');
+  background-image: image-url('images/logo_white.svg');
+  background-size: cover;
+  height: 60px;
+  margin: 20px 0;
+}
+
+.footer__brand__tag-line {
+  padding-left: 40px;
+}
+
+.footer__nav__links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.footer__nav__links__item {
+  width: 100px
+}
+
+.footer__nav__links__item__link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__contacts__city {
+  padding-left: 40px;
+}
+
+.footer__contacts__contact-info__phone {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding-left: 40px;
+}
+
+.footer__contacts__contact-info__email {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding-left: 40px;
+}
+
+.footer__contacts__social-icon {
+  display: block;
+  color: white;
+  padding-left: 40px;
+  text-decoration: none;
+}
+
+.footer__copyright {
+  padding: 40px 0;
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 330px) {
+  .footer__contacts__city {
+    padding-left: 0;
+  }
+
+  .footer__contacts__contact-info__phone {
+    padding-left: 0;
+  }
+
+  .footer__contacts__contact-info__email {
+    padding-left: 0;
+  }
+
+  .footer__contacts__social-icon {
+    padding-left: 0;
+  }
+}
