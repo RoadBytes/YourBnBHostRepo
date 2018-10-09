@@ -99,8 +99,47 @@
   list-style: none;
   margin: 20px auto;
   max-width: 800px;
+  padding: 0;
 }
 
 .home__marketing-copy__list__item {
   flex: 1;
+}
+
+@media only screen and (max-width: 820px) {
+  .home__top {
+    color: #0e76ce;
+    flex-direction: column;
+  }
+
+  .home__top__call-to-action {
+    color: #0e76ce;
+    margin: 10px;
+  }
+
+  .home__top__call-to-action__phrase {
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.9),
+                 1px -1px 0 rgba(255, 255, 255, 0.9),
+                 -1px 1px 0 rgba(255, 255, 255, 0.9),
+                 1px 1px 0 rgba(255, 255, 255, 0.9);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .home__top__call-to-action {
+    min-width: 90%;
+  }
+
+  .home__top__contact {
+    min-width: 90%;
+    padding: 0;
+  }
+
+  .home__marketing-copy__list {
+    flex-direction: column;
+  }
+
+  .home__marketing-copy__list__item {
+    margin: 10px;
+  }
 }
