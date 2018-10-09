@@ -4,8 +4,14 @@
   margin-bottom: -8px;
   margin-left: -8px;
   margin-right: -8px;
-  margin-top: 10px;
   padding: 0 15px;
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  max-width: 800px;
 }
 
 .footer__brand {
@@ -71,6 +77,20 @@
   text-align: center;
   width: 100%;
 }
+
+@media only screen and (max-width: 800px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__row {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
 
 @media only screen and (max-width: 330px) {
   .footer__contacts__city {
